@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Project-1.css">
+  <title>Survey Form - FreeCodeCamp</title>
+</head>
+<body>
+  <div>
+    <h1 id="title">Customer Feedback</h1>
+    <p id="description">Thank you for taking the time to improve our platform.</p>
+  </div>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name" id="name-label">Full Name:</label>
+      <input required id="name" name="name" type="text" placeholder="Enter your full name">
+      
+      <label for="email" id="email-label">Email:</label>
+      <input required id="email" name="email" type="email" placeholder="Enter your email">
+      
+      <label for="number" id="number-label">Age:</label>
+      <input required id="number" name="age" type="number" min="0" max="100" placeholder="18">
+      
+      <label for="from">Where are you from?</label>
+      <input required id="from" name="from" type="text" placeholder="Enter your country of residence">
+      
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select required id="dropdown" name="role">
+        <option value="">Select one:</option>
+        <option value="1">Student</option>
+        <option value="2">Full-time job</option>
+        <option value="3">Full-time learner</option>
+        <option value="4">Other</option>
+      </select>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Survey Questions</legend>
+      <label for="recommend" name="recommend"> Would you recommend us to a friend ?
+    </label>
+    <label for="Yes" name="yes" class="recommend">
+    Yes
+    </label> 
+      <input checked id="yes-recommend" type="radio" name="recommend" class="recommend" value="1" />
+    <label for="no" name="no" class="recommend" >
+    No  
+    </label>
+     <input id="no-recommend" type="radio" name="recommend" class="recommend" value="2" />
+    <label for="maybe" name="maybe" class="recommend">
+    Maybe
+    </label> 
+        <input id="maybe-recommend" type="radio" name="recommend" class="recommend"  value="3"/>
+    </fieldset>
+    <fieldset>
+    <label name="content"> 1. Were you happy with our content provided ? 
+    </label> 
+    <label for="excellent" class="checkbox"> Excellent 
+    <input checked id="excellent" type="checkbox" class="checkbox" value="1"/>
+    </label> 
+    <label for="fair" class="checkbox">
+    Fair
+    <input id="fair" type="checkbox" class="checkbox" value="2"/>
+    </label>
+    <label for="good" class="checkbox">
+    Good
+    <input id="good" type="checkbox" class="checkbox" value="3"/>
+    </label>
+    <label for="poor" class="checkbox">
+    Poor
+    <input id="poor" type="checkbox" class="checkbox" value="4"/>
+    </label>
+    <label name="website"> 2. Do you agree the website is easy to use ?
+    </label>
+     <label for="excellent" class="checkbox"> Excellent 
+    <input checked id="excellent" type="checkbox" class="checkbox" value="1"/>
+    </label> 
+    <label for="fair" class="checkbox">
+    Fair
+    <input id="fair" type="checkbox" class="checkbox" value="2"/>
+    </label>
+    <label for="good" class="checkbox">
+    Good
+    <input id="good" type="checkbox" class="checkbox" value="3"/>
+    </label>
+    <label for="poor" class="checkbox">
+    Poor
+    <input id="poor" type="checkbox" class="checkbox" value="4"/>
+    </label>
+    <label name="support"> 3. How did you find our contact support and forum ?
+    </label>
+    <label for="excellent" class="checkbox"> Excellent 
+    <input checked id="excellent" type="checkbox" class="checkbox" value="1"/>
+    </label> 
+    <label for="fair" class="checkbox">
+    Fair
+    <input id="fair" type="checkbox" class="checkbox" value="2"/>
+    </label>
+    <label for="good" class="checkbox">
+    Good
+    <input id="good" type="checkbox" class="checkbox" value="3"/>
+    </label>
+    <label for="poor" class="checkbox">
+    Poor
+    <input id="poor" type="checkbox" class="checkbox" value="4"/>
+    </label>
+    <label name="overall"> 4. Overall how did you find FreeCodeCamp ?
+        <label for="excellent" class="checkbox"> Excellent 
+    <input checked id="excellent" type="checkbox" class="checkbox" value="1"/>
+    </label> 
+    <label for="fair" class="checkbox">
+    Fair
+    <input id="fair" type="checkbox" class="checkbox" value="2"/>
+    </label>
+    <label for="good" class="checkbox">
+    Good
+    <input id="good" type="checkbox" class="checkbox" value="3"/>
+    </label>
+    <label for="poor" class="checkbox">
+    Poor
+    <input id="poor" type="checkbox" class="checkbox" value="4"/>
+    </label>  
+      <label for="improvement">Any suggestion on what should be improved? (optional)</label>
+      <textarea id="improvement" name="improvement" rows="3" placeholder="More videos..."></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>

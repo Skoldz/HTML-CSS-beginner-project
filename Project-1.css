@@ -1,0 +1,66 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  div {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    box-sizing: border-box; 
+  }
+  
+  fieldset {
+    margin-bottom: 1.5em;
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5em 0;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    box-sizing: border-box; 
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 0.5em;
+  }
+  
+  input[type="submit"] {
+    padding: 0.5em 1em;
+    background-color: #f5f}
+
+.checkbox, .recommend {
+    display: inline;
+    width: auto;
+    padding-right: 1em;
+    vertical-align: middle;
+ }
+
