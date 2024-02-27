@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Technical Documentation Page </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Documentation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header class="C"> C </header>
+      <ul >
+        <li class="nav-li"> <a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li class="nav-li"> <a class="nav-link" href="#C_and_languages">C and languages</a></li>
+        <li class="nav-li"> <a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li class="nav-li"> <a class="nav-link" href="#Variables_and_Types">Variables and Types</a></li>
+        <li class="nav-li"> <a class="nav-link" href="#Declaring_Variables">Declaring Variables</a></li>
+        <li class="nav-li"> <a class="nav-link" href="#Memory_Management">Memory Management</a></li>
+        <li class="nav-li"> <a class="nav-link" href="#Conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+  <main id="main-doc">
+
+    <section id="Introduction" class="main-section">
+      <header id="Introduction" class="header">Introduction</header> 
+      <article>
+        <p> 
+           C is a general-purpose, procedural computer programming language. It has  been closely associated with the UNIX operating system for which it was developed, as both the system and most of the programs running on it are written in C. The language itself is 
+        </p> 
+        <p>
+            C provides a set of built-in primitives and supports structured programming with its use of functions. It includes a static type system that prevents many unintended operations. By design, C provides constructs that allow efficient mapping of typical machine instructions, making it suitable for low-level programming like system software (e.g., operating systems and compilers).
+        </p>
+    
+    <ul> 
+      <li class="main-li"> System-level programming is facilitated by the language's small runtime, direct access to hardware resources, and efficient system calls. </li>
+      <li class="main-li">It includes a standard library of functions that perform input/output operations, memory allocation, string manipulation, and similar tasks. </li>
+      <li class="main-li"> It supports manual memory management, allowing developers to allocate and free memory as needed, giving them control over how their applications use resources.</li>
+    </ul>
+    </article>
+    </section>
+
+
+    <section id="C_and_languages" class="main-section">
+      <header  id="C_and_languages" class="header">C and languages</header> 
+        <article>
+          <p>C has influenced many other programming languages, most notably C++, which originally began as an extension to C. The syntax of C has inspired several other programming languages, such as Java, JavaScript, and many more. However, unlike those languages, C does not support object-oriented or functional programming paradigms natively. It is a structured programming language, emphasizing a step-by-step procedural approach to execution.
+          </p>
+          <p> In contrast to languages like JavaScript, which are interpreted, C code must be compiled into machine code before it can be executed. This compilation step allows for optimizations that can make C programs very efficient in terms of both speed and system resources.
+          </p>
+    </article>
+    </section>
+
+
+    <section id="Hello_World" class="main-section">
+      <header id="Hello_World" class="header">Hello World</header>
+          <article>
+          <p>A simple "Hello, world!" program in C demonstrates the basic structure of a C program including the use of the main function, inclusion of header files, and the printf function for output:
+          </p>
+          <div>
+            
+            <pre><code>#include &lt;stdio.h&gt;
+                int main() {
+                    printf("Hello, World!\n");
+                    return 0;
+                }
+                </code></pre>
+          </div> 
+      </article>
+      </section>
+    
+    <section id="Variables_and_Types" class="main-section">
+      <header id="Variables_and_Types" class="header">Variables and Types</header>
+      <article>
+        <p>Variables in C are typed, which means each variable must be declared with a specific type before it can be used. The type dictates the size and layout of the variable's memory, the range of values that can be stored within that memory, and the set of operations that can be applied to the variable
+        </p>
+        <p>The basic types in C include 'int' for integers, 'float' and 'double' for floating-point numbers, and 'char' for individual characters. C also supports arrays and structures, which allow for the creation of more complex data types that can store multiple values or a mix of different types.
+        </p>
+        <p> For example, declaration of an integer variable:
+        </p> 
+        <div>
+        <code> 
+    int integerVar = 42 
+        <code>
+        </div>
+               <p> For example, declaration of floating-point variables
+        </p> 
+        <div>
+        <code> 
+    float floatVar = 3.14f;<br>
+    double doubleVar = 2.718281828459;
+        <code>
+        </div>
+               <p> For example, declaration of a character variable:
+        </p> 
+        <div>
+        <code> 
+     char charVar = 'A';
+        <code>
+        </div>
+    </article>
+    </section>
+
+
+    <section id="Declaring_Variables" class="main-section">
+      <header id="Declaring_Variables" class="header">Declaring variables</header>
+      <article>
+          <p> Variables in C can be declared in multiple ways, depending on their intended scope and lifetime:
+          </p>
+          <ul>
+            <li class="main-li">Local variables are declared within a function and are only accessible within that function.
+            </li>
+            <li class="main-li">Global variables are declared outside of all functions and are accessible from any function within the same file.
+            </li>
+            <li class="main-li">Static variables are declared with the static keyword and maintain their value between function calls.
+            </li>
+            <li class="main-li">Constants can be declared with the const keyword, indicating that their value will not change after initialization.
+            </li>
+    </article>
+    </section>
+
+
+    <section id="Memory_Management" class="main-section">
+      <header id="Memory_Management" class="header">Memory Management</header>
+      <article>
+          <p> Unlike languages with automatic garbage collection, C requires manual memory management. The standard library provides malloc and free for dynamic memory allocation, allowing developers to explicitly allocate and deallocate memory as their program runs. This gives developers precise control over their program's memory usage but also introduces the risk of memory leaks and other memory management errors.
+          <p>
+    </article>
+    </section>
+
+
+    <section id="Conclusion" class="main-section">
+      <header id="Conclusion" class="header">Conclusion</header>
+      <article>
+          <p>C is a powerful language that offers programmers high levels of control over system resources and memory. Its syntax and semantics form the basis of many modern programming languages, making knowledge of C beneficial for understanding more complex languages. C remains widely used today in system programming, embedded systems, and high-performance computing.
+          </p>
+    </article>
+    </section>
+
+  </main>
+  </body> 
+</html>
