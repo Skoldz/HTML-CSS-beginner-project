@@ -1,0 +1,143 @@
+
+  body {
+    background-color: black;
+    color: white;
+    padding-top: 150px; 
+    font-family: Arial, sans-serif; 
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; 
+    padding: 0.5rem; 
+    z-index: 10; 
+  }
+  
+  #header-img{
+   width: 100px;
+    height: auto;
+  }
+  
+  #nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nav-bar li {
+    margin: 0 1rem;
+  }
+  
+  #nav-bar a {
+    text-decoration: none;
+    color: white; 
+  }
+  
+  #top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 10px;
+   
+  }
+  
+  #top > h2 {
+    margin-bottom: 20px;
+  }
+  
+  #email{
+    max-width: 275px;
+    width:100%;
+    padding: 5px;
+  }
+  
+  #submit{
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    background-color: #C19A6B;
+  }
+  
+  .grid {
+    display: grid;
+    width:50%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 2fr;
+    border: solid white;
+    justify-items:center;
+    align-items:center;
+  }
+  
+.grid img {
+  width: 100%; 
+  max-width: 600px; 
+}
+  
+  #video{
+  width:100%;
+  max-width: 500px;
+  display:flex;
+  margin:auto;
+  margin-bottom: 50px;
+  }
+  
+  .guitar{
+    border: 1px solid white;
+    text-align:center;
+    border-radius: 3px;
+  }
+  
+  li{
+     list-style:none; 
+   padding: 10px 20px 10px 0px;
+  }
+  
+  
+  .guitar-title h2{
+    background-color:#C19A6B;
+  }
+  .guitar-title {
+    background-color:#C19A6B;
+    padding:1px;
+  }
+  
+  #Pricing{
+    width:60%;
+    margin:auto;
+    margin-bottom: 50px;
+    display:flex;
+    gap:10px;
+    justify-content: space-between;
+    
+  }
+  
+  
+  .footer h4{
+  text-align:center;
+  background-color: 	#ADD8E6;
+  padding: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    #Pricing {
+      flex-direction: column;
+      width: 90%; 
+    }
+    .guitar {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+  }
+  
